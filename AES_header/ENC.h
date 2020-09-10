@@ -118,7 +118,7 @@ uint128 shiftRows(uint128 a)
 		for(int j=0;j<4;j++)	
 		{
 			k = Byte(word,j);
-			t|=putAt(k,(4-j+i)&3,j);
+			t|=putAt(k,(4+j+i)&3,j);
 		}
 	}
 	return t;
